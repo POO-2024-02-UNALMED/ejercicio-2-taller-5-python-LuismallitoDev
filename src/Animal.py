@@ -29,7 +29,11 @@ class Animal(SerVivo):
 
     def ruido(self):
         pass
+    def setNombre(self, nombre):
+        super().setNombre(nombre)  
 
+    def getNombre(self):
+        return super().getNombre()
     @classmethod
     def getTotalCreados(cls):
         return cls._totalCreados
